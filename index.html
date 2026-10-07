@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootcamp Application Form</title>
+</head>
+<body>
+
+<h1>Bootcamp Application Form</h1>
+<p>Application from-january 2027 intakes</p>
+
+<form action="#" method="POST">
+  <fieldset>
+    <legend>Personal Information</legend>
+    
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Feisal Ahmed" required minlength="3" maxlength="50"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="feisal@gmail.com" required><br><br>
+
+    <label for="phone">Phone:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="0712345678" required><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" min="1990-01-01" max="2010-01-01"><br><br>
+
+    <label for="portfolio">Portfolio URL:</label><br>
+    <input type="url" id="portfolio" name="portfolio" placeholder="https://myportfolio.com"><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label for="city">City (from datalist):</label><br>
+    <input list="cities" id="city" name="city" placeholder="Type your city">
+    <datalist id="cities">
+      <option value="Nairobi">
+      <option value="Mombasa">
+      <option value="Kisumu">
+    </datalist><br><br>
+
+    <label for="readonlyid">Application ID:</label><br>
+    <input type="text" id="readonlyid" name="readonlyid" value="BC-2027-001" readonly><br><br>
+  </fieldset>
+
+  <br>
+  <fieldset>
+    <legend>Program Details</legend>
+
+    <label for="course">Choose Course:</label><br>
+    <select id="course" name="course" required>
+      <optgroup label="Tech Courses">
+        <option value="web">software engineering</option>
+        <option value="data">Data Science</option>
+      </optgroup>
+      <optgroup label="Design Courses">
+        <option value="uiux">UI/UX Design</option>
+        <option value="graphic" disabled>Graphic Design (Full)</option>
+      </optgroup>
+    </select><br><br>
+
+    <label for="startmonth">Preferred Start Month:</label><br>
+    <input type="month" id="startmonth" name="startmonth"><br><br>
+
+    <label for="interviewtime">Preferred Interview Time:</label><br>
+    <input type="time" id="interviewtime" name="interviewtime"><br><br>
+
+    <label for="experience">Years of Experience:</label><br>
+    <input type="number" id="experience" name="experience" min="0" max="10" value="1"><br><br>
+
+    <label for="skilllevel">Skill Level (0-10):</label><br>
+    <input type="range" id="skilllevel" name="skilllevel" min="0" max="10"><br><br>
+
+    <label for="favcolor">Favorite Color for Badge:</label><br>
+    <input type="color" id="favcolor" name="favcolor" value="#0000ff"><br><br>
+
+    <label for="resume">Upload Resume:</label><br>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc"><br><br>
+
+    <label for="password">Create Password:</label><br>
+    <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+    <input type="hidden" id="source" name="source" value="website">
+
+    <label for="about">Why do you want to join?</label><br>
+    <textarea id="about" name="about" rows="4" cols="40" placeholder="Tell us about yourself..."></textarea><br><br>
+
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to <a href="#">Terms and Conditions</a></label><br><br>
+    
+    <small>All fields marked are required. We respect your privacy.</small><br><br>
+  </fieldset>
+
+  <br>
+  <button type="submit">Submit Application</button>
+  <button type="reset">Reset Form</button>
+  <input type="button" value="Help" onclick="alert('Fill all required fields!')">
+  
+</form>
+<hr>
+<h2>Thank you for applying!</h2>
+<p>We will contact you soon via email.</p>
+
+</body>
+</html>
